@@ -1,7 +1,20 @@
-import "./App.scss";
+import styles from "./App.module.scss";
+import AboutSection from "./components/aboutSection/AboutSection";
+import Header from "./components/header/Header";
 
-function App() {
-  return <h1>Hello world!</h1>;
-}
+const App = () => {
+  return (
+    <>
+      <section className={styles.firstSection}>
+        <div
+          className={`${styles.container} ${styles.firstSection__navContainer}`}
+        >
+          <Header />
+          <AboutSection />
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default App;

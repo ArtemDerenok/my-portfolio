@@ -1,0 +1,12 @@
+@import "../../variables";
+
+.button {
+  all: unset;
+  font-family: "Inter";
+  font-size: 12px;
+  color: $WHITE_BACKGROUND;
+  background-color: $PURPLE;
+  border-radius: 6px;
+  padding: 12px 21px 12px 21px;
+  cursor: pointer;
+}

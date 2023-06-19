@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.menu {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-family: "Inter";
+    font-size: 12px;
+  }
+
+  &__listItem {
+    a {
+      text-decoration: none;
+      color: $BLACK_TITLE;
+    }
+  }
+}
