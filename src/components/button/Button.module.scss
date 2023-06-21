@@ -9,4 +9,16 @@
   border-radius: 6px;
   padding: 12px 21px 12px 21px;
   cursor: pointer;
+
+  &:hover {
+    background-color: $BUTTON_HOVER;
+  }
+
+  &:active {
+    background-color: $BUTTON_FOCUS;
+  }
+
+  &:disabled {
+    background-color: $BUTTON_DISABLE;
+  }
 }

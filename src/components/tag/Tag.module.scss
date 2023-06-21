@@ -1,0 +1,21 @@
+@import "../../variables";
+
+.tag {
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border-radius: 3px;
+  align-items: center;
+  background-color: $BACKGROUND_TAG;
+
+  &__text {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+  }
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
