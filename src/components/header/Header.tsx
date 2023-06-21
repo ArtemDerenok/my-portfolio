@@ -15,7 +15,7 @@ const Header = () => {
         <div className={styles.header__boxTwo}>
           <Link
             img={gitHubImg}
-            src="https://github.com/ArtemDerenok"
+            href="https://github.com/ArtemDerenok"
             alt="github"
           />
           <DarkModeBtn />

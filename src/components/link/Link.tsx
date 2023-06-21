@@ -1,12 +1,14 @@
+import styles from "./Link.module.scss";
+
 interface ILink {
   img: string;
-  src: string;
+  href: string;
   alt: string;
 }
 
-const Link = ({ img, src, alt }: ILink) => {
+const Link = ({ img, href, alt }: ILink) => {
   return (
-    <a href={src}>
+    <a href={href} className={styles.link}>
       <img src={img} alt={alt} />
     </a>
   );

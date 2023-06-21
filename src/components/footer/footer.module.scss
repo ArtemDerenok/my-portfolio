@@ -1,0 +1,35 @@
+.footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding-left: 200px;
+  padding-right: 200px;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+    width: 820px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer {
+    width: 100%;
+  }
+}
