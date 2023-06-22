@@ -1,0 +1,24 @@
+@import "../../variables";
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 820px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
+}

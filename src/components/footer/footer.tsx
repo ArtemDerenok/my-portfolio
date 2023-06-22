@@ -3,7 +3,7 @@ import Logo from "../logo/Logo";
 import linkedIcon from "../../assets/icons/linked.svg";
 import telegramIcon from "../../assets/icons/telegram.png";
 import githubIcon from "../../assets/icons/github.svg";
-import styles from "./footer.module.scss";
+import styles from "./Footer.module.scss";
 
 const Footer = () => {
   return (

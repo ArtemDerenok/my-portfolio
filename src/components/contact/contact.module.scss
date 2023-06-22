@@ -9,12 +9,13 @@
   display: flex;
   justify-content: center;
   gap: 160px;
-  align-items: center;
+  align-items: flex-start;
   background-color: $PURPLE;
   color: $WHITE_BACKGROUND;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
+  padding-top: 35px;
 
   &__boxOne {
   }
@@ -35,7 +36,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 
   &__name {
     all: unset;

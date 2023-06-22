@@ -1,5 +1,5 @@
 import contactImg from "../../assets/icons/contact.png";
-import styles from "./contact.module.scss";
+import styles from "./Contact.module.scss";
 
 const Contact = () => {
   return (
