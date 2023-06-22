@@ -1,0 +1,66 @@
+@import "../../variables";
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+  align-items: center;
+  background-color: $PURPLE;
+  color: $WHITE_BACKGROUND;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+
+  &__boxOne {
+  }
+
+  &__title {
+    font-family: "Source Code Pro";
+    font-weight: bold;
+    font-size: 49px;
+  }
+
+  &__text {
+  }
+
+  &__boxTwo {
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__name {
+    all: unset;
+    background-color: $FORM_BACKGROUND;
+  }
+
+  &__email {
+    all: unset;
+    background-color: $FORM_BACKGROUND;
+  }
+
+  &__message {
+    all: unset;
+    background-color: $FORM_BACKGROUND;
+    resize: none;
+  }
+
+  &__button {
+    all: unset;
+    background-color: $WHITE_BACKGROUND;
+    color: $BLACK_TITLE;
+    font-family: "Open Sans Bold";
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+  }
+}
