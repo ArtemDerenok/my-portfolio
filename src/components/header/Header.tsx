@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "../button/Button";
 import DarkModeBtn from "../darkModeBtn/DarkModeBtn";
 import Link from "../link/Link";
@@ -5,8 +6,16 @@ import Logo from "../logo/Logo";
 import Menu from "../menu/Menu";
 import gitHubImg from "../../assets/icons/github.svg";
 import styles from "./Header.module.scss";
+import NavBar from "../navBar/NavBar";
+import Hamburger from "../hamburger/Hamburger";
 
 const Header = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleMobileMenu = () => {
+    setIsMobile(!isMobile);
+  };
+
   return (
     <header className={styles.header}>
       <Logo />
@@ -19,9 +28,15 @@ const Header = () => {
             alt="github"
           />
           <DarkModeBtn />
+          <div onClick={handleMobileMenu} className={styles.header__mobileMenu}>
+            <Hamburger isMobile={isMobile} />
+          </div>
         </div>
-        <Button text="Contact me &rarr;" />
+        <div className={styles.header__contactBtn}>
+          <Button text="Contact me &rarr;" />
+        </div>
       </div>
+      <NavBar isMobile={isMobile} handleIsMobile={handleMobileMenu} />
     </header>
   );
 };

@@ -1,0 +1,39 @@
+@import "../../variables";
+
+.navBar {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: $PURPLE;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  font-family: "Inter";
+  font-size: 20px;
+  z-index: 10;
+  transition: 1s right;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    a {
+      text-decoration: none;
+      color: $WHITE_BACKGROUND;
+    }
+  }
+}
+
+.active {
+  right: 0;
+}
+
+@media (max-width: 575px) {
+  .navBar {
+    display: flex;
+  }
+}

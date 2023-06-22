@@ -18,4 +18,20 @@
     align-items: center;
     gap: 18px;
   }
+
+  &__mobileMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    &__mobileMenu {
+      display: block;
+    }
+
+    &__contactBtn {
+      display: none;
+    }
+  }
 }
