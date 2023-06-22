@@ -25,6 +25,7 @@
     font-family: "Source Code Pro";
     font-weight: bold;
     font-size: 49px;
+    margin-bottom: 5px;
   }
 
   &__text {
@@ -64,5 +65,25 @@
     padding-top: 5px;
     padding-bottom: 5px;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact {
+    width: 820px;
+    padding-bottom: 35px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact {
+    width: 100%;
   }
 }
