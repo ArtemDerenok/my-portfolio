@@ -1,0 +1,28 @@
+@import "../../variables";
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.projects {
+  padding-left: 20px;
+  &__title {
+    font-family: "Source Code Pro";
+    font-weight: bold;
+    font-size: 49px;
+    margin-bottom: 42px;
+
+    span {
+      color: $PURPLE;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin-bottom: 42px;
+  }
+}
