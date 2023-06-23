@@ -54,6 +54,8 @@
     all: unset;
     background-color: $FORM_BACKGROUND;
     resize: none;
+    width: 300px;
+    height: 100px;
   }
 
   &__button {
@@ -85,5 +87,13 @@
 @media (max-width: 575px) {
   .contact {
     width: 100%;
+
+    &__boxOne {
+      padding-left: 10px;
+    }
+
+    &__img {
+      display: none;
+    }
   }
 }

@@ -10,7 +10,7 @@ const Contact = () => {
           Want a website for your brand and business? I design what you
           desire....
         </p>
-        <img src={contactImg} alt="contacts" />
+        <img src={contactImg} alt="contacts" className={styles.contact__img} />
       </div>
       <div className={styles.contact__boxTwo}>
         <form className={styles.form}>
@@ -22,8 +22,6 @@ const Contact = () => {
           <textarea
             name=""
             id="message"
-            cols={40}
-            rows={5}
             className={styles.form__message}
           ></textarea>
           <button className={styles.form__button}>Submit</button>

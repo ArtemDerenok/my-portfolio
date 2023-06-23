@@ -3,7 +3,6 @@
 .about {
   min-height: 595px;
   padding: 92px 320px 92px 320px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +32,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1300px) {
   .about {
     padding: 92px 15px 92px 15px;
   }
@@ -48,4 +47,15 @@
 }
 
 @media (max-width: 575px) {
+  .about {
+    padding: 50px 15px 50px 15px;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+  }
 }

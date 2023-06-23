@@ -6,3 +6,9 @@
   font-weight: bold;
   font-size: 27px;
 }
+
+@media (max-width: 575px) {
+  .logo {
+    font-size: 20px;
+  }
+}
