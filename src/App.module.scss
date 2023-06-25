@@ -1,11 +1,7 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-}
-
-.firstSection {
-  &__navContainer {
-  }
+  position: relative;
 }
 
 @media (max-width: 991px) {

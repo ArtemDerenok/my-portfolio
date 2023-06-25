@@ -52,7 +52,7 @@ const iconsArr: ITagObj[] = [
 const AboutSection = () => {
   return (
     <div className={styles.about}>
-      <h1>
+      <h1 id="about">
         Hello I’m
         <br /> Artyom Derenok
       </h1>

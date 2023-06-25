@@ -13,16 +13,16 @@ const NavBar = ({ isMobile, handleIsMobile }: INavBar) => {
     >
       <ul className={styles.navBar__list}>
         <li>
-          <a href="#">Home</a>
+          <a href="#about">Home</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#">Work</a>
+          <a href="#projects">Work</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#contacts">Contact</a>
         </li>
       </ul>
       <div></div>

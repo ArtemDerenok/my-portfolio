@@ -9,6 +9,7 @@
   border-radius: 6px;
   padding: 12px 21px 12px 21px;
   cursor: pointer;
+  display: block;
 
   &:hover {
     background-color: $BUTTON_HOVER;

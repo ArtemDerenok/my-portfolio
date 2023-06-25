@@ -5,13 +5,13 @@ const Menu = () => {
     <nav className={styles.menu}>
       <ul className={styles.menu__list}>
         <li className={styles.menu__listItem}>
-          <a href="#">Home</a>
+          <a href="#about">Home</a>
         </li>
         <li className={styles.menu__listItem}>
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li className={styles.menu__listItem}>
-          <a href="#">Work</a>
+          <a href="#projects">Work</a>
         </li>
       </ul>
     </nav>

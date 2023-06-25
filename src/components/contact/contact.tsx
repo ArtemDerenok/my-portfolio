@@ -5,7 +5,9 @@ const Contact = () => {
   return (
     <section className={`${styles.container} ${styles.contact}`}>
       <div className={styles.contact__boxOne}>
-        <h3 className={styles.contact__title}>Contact</h3>
+        <h3 className={styles.contact__title} id="contacts">
+          Contact
+        </h3>
         <p className={styles.contact__text}>
           Want a website for your brand and business? I design what you
           desire....

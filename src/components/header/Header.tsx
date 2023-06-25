@@ -33,7 +33,7 @@ const Header = () => {
           </div>
         </div>
         <div className={styles.header__contactBtn}>
-          <Button text="Contact me &rarr;" />
+          <Button text="Contact me &rarr;" href="#contacts" />
         </div>
       </div>
       <NavBar isMobile={isMobile} handleIsMobile={handleMobileMenu} />
