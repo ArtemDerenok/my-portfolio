@@ -31,6 +31,7 @@
   &__tagsBoxOne {
     display: flex;
     gap: 12px;
+    flex-wrap: wrap;
   }
 
   &__tagsBoxTwo {
@@ -48,5 +49,17 @@
   &:hover {
     background-color: $BACKGROUND_TAG;
     border-radius: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .card {
+    &__img {
+      width: 300px;
+      height: 200px;
+    }
+    &__tags {
+      width: 310px;
+    }
   }
 }

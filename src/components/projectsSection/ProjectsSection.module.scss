@@ -26,3 +26,11 @@
     margin-bottom: 42px;
   }
 }
+
+@media (max-width: 575px) {
+  .projects {
+    &__title {
+      font-size: 45px;
+    }
+  }
+}
