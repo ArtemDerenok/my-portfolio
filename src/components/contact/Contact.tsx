@@ -9,8 +9,7 @@ const Contact = () => {
           Contact
         </h3>
         <p className={styles.contact__text}>
-          Want a website for your brand and business? I design what you
-          desire....
+          Want a website for your brand and business? I’m ready to talk...
         </p>
         <img src={contactImg} alt="contacts" className={styles.contact__img} />
       </div>
