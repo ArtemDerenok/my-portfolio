@@ -37,11 +37,11 @@ const Contact = () => {
             type="text"
             id="name"
             className={styles.form__name}
-            {...(register("name"), { required: true, minLength: 2 })}
+            {...register("name", { required: true, minLength: 2 })}
           />
-          {errors.message?.type === "required" ? (
+          {errors.name?.type === "required" ? (
             <p className={styles.error}>Name is required</p>
-          ) : errors.message?.type === "minLength" ? (
+          ) : errors.name?.type === "minLength" ? (
             <p className={styles.error}>Name is too short</p>
           ) : null}
           <label htmlFor="email">Email</label>
@@ -49,7 +49,7 @@ const Contact = () => {
             type="email"
             id="email"
             className={styles.form__email}
-            {...(register("email"), { required: true })}
+            {...register("email", { required: true })}
           />
           {errors.email?.type === "required" ? (
             <p className={styles.error}>Email is required</p>
