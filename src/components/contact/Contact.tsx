@@ -1,5 +1,6 @@
 import contactImg from "../../assets/icons/contact.png";
 import { useForm, SubmitHandler } from "react-hook-form";
+import psotMail from "../../api/api";
 import styles from "./Contact.module.scss";
 
 interface IFormInput {
@@ -15,8 +16,9 @@ const Contact = () => {
     formState: { errors },
   } = useForm<IFormInput>();
 
-  const onSubmit: SubmitHandler<IFormInput> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<IFormInput> = async (data) => {
+    const result = await psotMail(data);
+    console.log(result);
   };
 
   return (
