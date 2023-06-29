@@ -14,6 +14,7 @@ interface ICard {
     text: string;
     icon: string;
   }[];
+  theme: boolean;
 }
 
 const Card = ({
@@ -23,6 +24,7 @@ const Card = ({
   demo,
   code,
   technologies,
+  theme,
 }: ICard) => {
   return (
     <div className={styles.card}>
@@ -31,12 +33,12 @@ const Card = ({
       <div className={styles.card__tags}>
         <div className={styles.card__tagsBoxOne}>
           {technologies.map((elem, index) => (
-            <Tag text={elem.text} icon={elem.icon} key={index} />
+            <Tag text={elem.text} icon={elem.icon} key={index} theme={theme} />
           ))}
         </div>
         <div className={styles.card__tagsBoxTwo}>
-          <Link img={gitHubIcon} href={code} alt="github" />
-          <Link img={deployIcon} href={demo} alt="demo" />
+          <Link img={gitHubIcon} href={code} alt="github" theme={theme} />
+          <Link img={deployIcon} href={demo} alt="demo" theme={theme} />
         </div>
       </div>
       <p className={styles.card__text}>{description}</p>

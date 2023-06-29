@@ -12,6 +12,10 @@
   &__text {
     font-family: "Source Sans Pro";
     font-size: 16px;
+
+    &_dark {
+      color: $BLACK_BACKGROUND;
+    }
   }
 
   img {

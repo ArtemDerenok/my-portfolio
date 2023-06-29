@@ -1,10 +1,20 @@
 import styles from "./DarkModeBtn.module.scss";
 import darkModeImg from "../../assets/icons/mode.svg";
 
-const DarkModeBtn = () => {
+const DarkModeBtn = ({
+  handleDarkMode,
+  theme,
+}: {
+  handleDarkMode: () => void;
+  theme: boolean;
+}) => {
   return (
-    <button className={styles.button}>
-      <img src={darkModeImg} alt="dark mode" />
+    <button className={styles.button} onClick={handleDarkMode}>
+      <img
+        src={darkModeImg}
+        alt="dark mode"
+        className={`${theme ? styles.dark : null}`}
+      />
     </button>
   );
 };

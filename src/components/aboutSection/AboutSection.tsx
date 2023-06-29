@@ -49,7 +49,7 @@ const iconsArr: ITagObj[] = [
   },
 ];
 
-const AboutSection = () => {
+const AboutSection = ({ theme }: { theme: boolean }) => {
   return (
     <div className={styles.about}>
       <h1 id="about">
@@ -65,7 +65,7 @@ const AboutSection = () => {
       </p>
       <ul>
         {iconsArr.map((elem, index) => (
-          <Tag text={elem.text} icon={elem.icon} key={index} />
+          <Tag text={elem.text} icon={elem.icon} key={index} theme={theme} />
         ))}
       </ul>
     </div>

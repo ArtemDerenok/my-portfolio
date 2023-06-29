@@ -13,7 +13,7 @@ import momentumImg from "../../assets/img/momentum.png";
 import songBird from "../../assets/img/songbird.png";
 import styles from "./ProjectsSection.module.scss";
 
-const ProjectsSection = () => {
+const ProjectsSection = ({ theme }: { theme: boolean }) => {
   return (
     <section className={styles.container}>
       <div className={styles.projects}>
@@ -33,6 +33,7 @@ const ProjectsSection = () => {
               { text: "JavaScript", icon: jsIcon },
               { text: "Bootstrap", icon: bootstrapIcon },
             ]}
+            theme={theme}
           />
           <Card
             heading="Portfolio"
@@ -45,6 +46,7 @@ const ProjectsSection = () => {
               { text: "SCSS", icon: scssIcon },
               { text: "JavaScript", icon: jsIcon },
             ]}
+            theme={theme}
           />
           <Card
             heading="Momentum"
@@ -58,6 +60,7 @@ const ProjectsSection = () => {
               { text: "JavaScript", icon: jsIcon },
               { text: "Webpack", icon: webpackIcon },
             ]}
+            theme={theme}
           />
           <Card
             heading="Songbird"
@@ -71,6 +74,7 @@ const ProjectsSection = () => {
               { text: "TypeScript", icon: tsIcon },
               { text: "React", icon: reactIcon },
             ]}
+            theme={theme}
           />
         </div>
       </div>

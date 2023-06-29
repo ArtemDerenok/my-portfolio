@@ -1,17 +1,23 @@
 import styles from "./Menu.module.scss";
 
-const Menu = () => {
+const Menu = ({ theme }: { theme: boolean }) => {
   return (
     <nav className={styles.menu}>
       <ul className={styles.menu__list}>
-        <li className={styles.menu__listItem}>
-          <a href="#about">Home</a>
+        <li className={`${styles.menu__listItem}`}>
+          <a href="#about" className={`${theme ? styles.dark : null}`}>
+            Home
+          </a>
         </li>
-        <li className={styles.menu__listItem}>
-          <a href="#about">About</a>
+        <li className={`${styles.menu__listItem}`}>
+          <a href="#about" className={`${theme ? styles.dark : null}`}>
+            About
+          </a>
         </li>
-        <li className={styles.menu__listItem}>
-          <a href="#projects">Work</a>
+        <li className={`${styles.menu__listItem}`}>
+          <a href="#projects" className={`${theme ? styles.dark : null}`}>
+            Work
+          </a>
         </li>
       </ul>
     </nav>

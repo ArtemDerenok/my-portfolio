@@ -1,7 +1,14 @@
+@import "./variables";
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
+}
+
+.dark {
+  background-color: $BLACK_BACKGROUND;
+  color: white !important;
 }
 
 @media (max-width: 991px) {

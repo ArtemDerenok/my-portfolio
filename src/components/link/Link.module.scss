@@ -4,3 +4,7 @@
     height: 18px;
   }
 }
+
+.dark {
+  filter: invert(1.5) sepia(1) saturate(5) hue-rotate(175deg);
+}

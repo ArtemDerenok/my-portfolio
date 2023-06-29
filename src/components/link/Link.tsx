@@ -4,12 +4,13 @@ interface ILink {
   img: string;
   href: string;
   alt: string;
+  theme: boolean;
 }
 
-const Link = ({ img, href, alt }: ILink) => {
+const Link = ({ img, href, alt, theme }: ILink) => {
   return (
     <a href={href} className={styles.link}>
-      <img src={img} alt={alt} />
+      <img src={img} alt={alt} className={`${theme ? styles.dark : null}`} />
     </a>
   );
 };

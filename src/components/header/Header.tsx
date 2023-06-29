@@ -9,7 +9,13 @@ import styles from "./Header.module.scss";
 import NavBar from "../navBar/NavBar";
 import Hamburger from "../hamburger/Hamburger";
 
-const Header = () => {
+const Header = ({
+  theme,
+  handleDarkMode,
+}: {
+  theme: boolean;
+  handleDarkMode: () => void;
+}) => {
   const [isMobile, setIsMobile] = useState(false);
 
   const handleMobileMenu = () => {
@@ -20,14 +26,15 @@ const Header = () => {
     <header className={styles.header}>
       <Logo />
       <div className={styles.header__boxOne}>
-        <Menu />
+        <Menu theme={theme} />
         <div className={styles.header__boxTwo}>
           <Link
             img={gitHubImg}
             href="https://github.com/ArtemDerenok"
             alt="github"
+            theme={theme}
           />
-          <DarkModeBtn />
+          <DarkModeBtn handleDarkMode={handleDarkMode} theme={theme} />
           <div onClick={handleMobileMenu} className={styles.header__mobileMenu}>
             <Hamburger isMobile={isMobile} />
           </div>
