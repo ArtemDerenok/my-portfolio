@@ -18,20 +18,11 @@
   font-weight: 700;
   padding-top: 35px;
 
-  &__boxOne {
-  }
-
   &__title {
     font-family: "Source Code Pro";
     font-weight: bold;
     font-size: 49px;
     margin-bottom: 5px;
-  }
-
-  &__text {
-  }
-
-  &__boxTwo {
   }
 }
 
@@ -67,6 +58,17 @@
     padding-top: 5px;
     padding-bottom: 5px;
     cursor: pointer;
+    transition: 0.5s all;
+
+    &:hover {
+      box-shadow: 1px 1px $FORM_BACKGROUND, 2px 2px $FORM_BACKGROUND,
+        3px 3px $FORM_BACKGROUND, 3px 3px $FORM_BACKGROUND,
+        3px 3px $FORM_BACKGROUND, 3px 3px $FORM_BACKGROUND,
+        3px 3px $FORM_BACKGROUND;
+      -webkit-transform: translateX(-7px);
+      transform: translateX(-7px);
+      border-radius: 15px;
+    }
   }
 }
 
