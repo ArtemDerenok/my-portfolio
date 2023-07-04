@@ -24,7 +24,7 @@ const ProjectsSection = ({ theme }: { theme: boolean }) => {
           <Card
             heading="Quiz art"
             img={quizImg}
-            description="Digital agency is a landing page built with the latest version of next.js using best practices."
+            description="Quiz application built with JavaScript, Webpack and Bootstrap framework."
             demo="https://serene-hodgkin-901fac.netlify.app/"
             code="https://github.com/ArtemDerenok/art-quiz"
             technologies={[
@@ -38,7 +38,7 @@ const ProjectsSection = ({ theme }: { theme: boolean }) => {
           <Card
             heading="Portfolio"
             img={guitarImg}
-            description="Digital agency is a landing page built with the latest version of next.js using best practices."
+            description="Landing page built with SCSS and using best practice."
             demo="https://wondrous-buttercream-13b1f4.netlify.app/"
             code="https://github.com/ArtemDerenok/guitarist-portfolio"
             technologies={[
@@ -51,7 +51,7 @@ const ProjectsSection = ({ theme }: { theme: boolean }) => {
           <Card
             heading="Momentum"
             img={momentumImg}
-            description="Digital agency is a landing page built with the latest version of next.js using best practices."
+            description="Personal dashboard built with native JavaScript."
             demo="https://happy-perlman-3d94e0.netlify.app/"
             code="https://github.com/ArtemDerenok/Momentum"
             technologies={[
@@ -65,7 +65,7 @@ const ProjectsSection = ({ theme }: { theme: boolean }) => {
           <Card
             heading="Songbird"
             img={songBird}
-            description="Digital agency is a landing page built with the latest version of next.js using best practices."
+            description="SPA built with React, TypeScript and SCSS."
             demo="https://astounding-marigold-218591.netlify.app/"
             code="https://github.com/ArtemDerenok/songbird"
             technologies={[

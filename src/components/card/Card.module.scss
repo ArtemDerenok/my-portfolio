@@ -17,9 +17,12 @@
   }
 
   &__img {
-    width: 532px;
-    height: 372px;
+    max-width: 444px;
+    max-height: 372px;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.21);
   }
 
   &__tags {
@@ -44,10 +47,15 @@
     font-size: 16px;
     font-family: Source Sans Pro;
     max-width: 532px;
+    align-self: flex-start;
   }
 
   &:hover {
-    background-color: $BACKGROUND_TAG;
+    transition: 1s all;
+    box-shadow: 1px 1px $PURPLE, 2px 2px $PURPLE, 3px 3px $PURPLE,
+      4px 4px $PURPLE, 5px 5px $PURPLE, 6px 6px $PURPLE, 7px 7px $PURPLE;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
     border-radius: 15px;
   }
 }
