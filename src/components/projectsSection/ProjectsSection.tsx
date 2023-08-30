@@ -11,6 +11,10 @@ import quizImg from "../../assets/img/artquiz.png";
 import guitarImg from "../../assets/img/guitar.png";
 import momentumImg from "../../assets/img/momentum.png";
 import songBird from "../../assets/img/songbird.png";
+import restCounties from "../../assets/img/restCountries.png";
+import cafeStreet from "../../assets/img/cafeStreet.png";
+import shortlyImg from "../../assets/img/shortly.png";
+import rockPaper from "../../assets/img/rockPaper.png";
 import styles from "./ProjectsSection.module.scss";
 
 const ProjectsSection = ({ theme }: { theme: boolean }) => {
@@ -63,6 +67,20 @@ const ProjectsSection = ({ theme }: { theme: boolean }) => {
             theme={theme}
           />
           <Card
+            heading="Countries"
+            img={restCounties}
+            description="REST Countries API with color theme switcher"
+            demo="https://zippy-creponne-2d84e6.netlify.app/"
+            code="https://github.com/ArtemDerenok/rest-countries-api"
+            technologies={[
+              { text: "HTML", icon: htmlIcon },
+              { text: "SCSS", icon: scssIcon },
+              { text: "TypeScript", icon: tsIcon },
+              { text: "React", icon: reactIcon },
+            ]}
+            theme={theme}
+          />
+          <Card
             heading="Songbird"
             img={songBird}
             description="SPA built with React, TypeScript and SCSS."
@@ -73,6 +91,48 @@ const ProjectsSection = ({ theme }: { theme: boolean }) => {
               { text: "SCSS", icon: scssIcon },
               { text: "TypeScript", icon: tsIcon },
               { text: "React", icon: reactIcon },
+            ]}
+            theme={theme}
+          />
+          <Card
+            heading="Cafe Street"
+            img={cafeStreet}
+            description="Landing page built with SCSS and using best practice."
+            demo="https://shimmering-cendol-9a5e19.netlify.app/"
+            code="https://github.com/ArtemDerenok/coffeeShop-landing"
+            technologies={[
+              { text: "HTML", icon: htmlIcon },
+              { text: "SCSS", icon: scssIcon },
+              { text: "JavaScript", icon: jsIcon },
+              { text: "Webpack", icon: webpackIcon },
+            ]}
+            theme={theme}
+          />
+          <Card
+            heading="Shortly"
+            img={shortlyImg}
+            description="Shortly URL shortening API"
+            demo="https://transcendent-lily-e0158f.netlify.app/"
+            code="https://github.com/ArtemDerenok/url-shortening-api"
+            technologies={[
+              { text: "HTML", icon: htmlIcon },
+              { text: "SCSS", icon: scssIcon },
+              { text: "TypeScript", icon: tsIcon },
+              { text: "React", icon: reactIcon },
+            ]}
+            theme={theme}
+          />
+          <Card
+            heading="Rock, Paper, Scissors"
+            img={rockPaper}
+            description="Landing page built with SCSS and using best practice."
+            demo="https://jovial-platypus-0d5ca8.netlify.app/"
+            code="https://github.com/ArtemDerenok/rock-paper-scissors-master"
+            technologies={[
+              { text: "HTML", icon: htmlIcon },
+              { text: "SCSS", icon: scssIcon },
+              { text: "JavaScript", icon: jsIcon },
+              { text: "Webpack", icon: webpackIcon },
             ]}
             theme={theme}
           />
