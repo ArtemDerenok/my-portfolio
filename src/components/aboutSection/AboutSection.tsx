@@ -4,10 +4,10 @@ import jsIcon from "../../assets/icons/js.svg";
 import tsIcon from "../../assets/icons/ts.svg";
 import reactIcon from "../../assets/icons/react.svg";
 import webpackIcon from "../../assets/icons/webpack.png";
-import nestIcon from "../../assets/icons/node.svg";
+import reduxIcon from "../../assets/icons/redux.svg";
 import nodeIcon from "../../assets/icons/node.svg";
-import styles from "./AboutSection.module.scss";
 import Tag from "../tag/Tag";
+import styles from "./AboutSection.module.scss";
 
 interface ITagObj {
   text: string;
@@ -36,12 +36,12 @@ const iconsArr: ITagObj[] = [
     icon: reactIcon,
   },
   {
-    text: "Webpack",
-    icon: webpackIcon,
+    text: "Redux",
+    icon: reduxIcon,
   },
   {
-    text: "NestJS",
-    icon: nestIcon,
+    text: "Webpack",
+    icon: webpackIcon,
   },
   {
     text: "NodeJS",

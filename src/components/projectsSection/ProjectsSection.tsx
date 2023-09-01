@@ -125,7 +125,8 @@ const ProjectsSection = ({ theme }: { theme: boolean }) => {
           <Card
             heading="Rock, Paper, Scissors"
             img={rockPaper}
-            description="Landing page built with SCSS and using best practice."
+            description="
+            The famous game using JavaScript."
             demo="https://jovial-platypus-0d5ca8.netlify.app/"
             code="https://github.com/ArtemDerenok/rock-paper-scissors-master"
             technologies={[
