@@ -36,7 +36,7 @@ const Header = ({
           />
           <DarkModeBtn handleDarkMode={handleDarkMode} theme={theme} />
           <div onClick={handleMobileMenu} className={styles.header__mobileMenu}>
-            <Hamburger isMobile={isMobile} />
+            <Hamburger isMobile={isMobile} theme={theme} />
           </div>
         </div>
         <div className={styles.header__contactBtn}>
