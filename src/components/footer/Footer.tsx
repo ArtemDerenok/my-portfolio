@@ -21,7 +21,7 @@ const Footer = ({ theme }: { theme: boolean }) => {
         <li>
           <Link
             img={telegramIcon}
-            href="https://t.me/ARTD95"
+            href="https://t.me/ad1237832"
             alt="telegram"
             theme={theme}
           />
